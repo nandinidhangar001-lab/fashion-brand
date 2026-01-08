@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #eff6ff, #dbeafe, #bfdbfe);
+    min-height: 100vh;
+    color: #4a4a4a;
+}
+
+/* Header */
+header {
+    background: rgba(255,255,255,0.95);
+    padding: 2.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(59,130,246,0.1);
+}
+
+header h2 {
+    font-size: 2.7rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #3b82f6, #60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Navigation */
+nav {
+    background: rgba(255,255,255,0.95);
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1e40af;
+    font-weight: 600;
+    padding: 12px 26px;
+    border-radius: 50px;
+    background: #dbeafe;
+}
+
+nav a:hover,
+nav a.active {
+    background: linear-gradient(135deg, #3b82f6, #60a5fa);
+    color: white;
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem;
+}
+
+/* Products */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.product {
+    background: white;
+    width: 260px;
+    padding: 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(59,130,246,0.15);
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.product h3 {
+    margin: 1rem 0;
+    color: #1e40af;
+}
+
+.product button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #3b82f6;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Login Box */
+.login-box {
+    max-width: 420px;
+    margin: 3rem auto;
+    background: white;
+    padding: 3rem;
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(59,130,246,0.2);
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1e40af;
+}
+
+.login-box label {
+    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 0.5rem;
+    border-radius: 12px;
+    border: 1px solid #c7d2fe;
+}
+
+.login-box button {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 12px;
+    border-radius: 20px;
+    background: #3b82f6;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: center;
+}
+
+th {
+    background: #e0e7ff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: white;
+    margin-top: 3rem;
+}
+
+/* ========================= */
+/* Cart Boxes (ADDED ONLY) */
+/* ========================= */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.cart-box {
+    background: white;
+    width: 240px;
+    padding: 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(59,130,246,0.15);
+    position: relative;
+}
+
+.cart-box input[type="checkbox"] {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    transform: scale(1.2);
+}
+
+.cart-box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.cart-box h3 {
+    margin: 1rem 0 0.5rem;
+    color: #1e40af;
+}
+
+.cart-box p {
+    font-weight: bold;
+    color: #2563eb;
+}
